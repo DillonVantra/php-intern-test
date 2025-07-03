@@ -7,5 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 class Employees extends Model
 {
     //
-    
+    protected $fillable = [
+        'nomor',
+        'nama',
+        'jabatan',
+        'talahir',
+        'photo_upload_path',
+        'created_on',
+        'updated_on',
+        'created_by',
+        'updated_by',
+        'deleted_on'
+    ];
+
+    public $timestamps = false;
 }
